@@ -22,16 +22,31 @@ def main():
     print("Thank you.")
 
 def get_choice():
+    """
+    Get a choice from menu
+
+    :return: String value contain user choice
+    """
     print(MENU)
     choice = input(">>> ").upper()
     return choice
 
 def convert_from_celsius():
+    """
+    Convert from Celsius -> Fahrenheit then print the result
+
+    :return: None
+    """
     celsius = float(input("Celsius: "))
     fahrenheit = celsius * 9.0 / 5 + 32
     print(f"Result: {fahrenheit:.2f} F")
 
 def convert_from_fahrenheit():
+    """
+    Convert from Fahrenheit -> Celsius then print the result
+
+    :return: None
+    """
     fahrenheit = float(input("Fahrenheit : "))
     celsius = 5 / 9 * (fahrenheit - 32)
     print(f"Result: {celsius:.2f} C")

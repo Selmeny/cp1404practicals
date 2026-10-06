@@ -33,6 +33,11 @@ def main():
     print("Thank you")
 
 def get_valid_score():
+    """
+    Get a valid score from user
+
+    :return: Int value based on user input
+    """
     score = int(input("Enter your score: "))
 
     while score < 0 or score > 100:
@@ -42,6 +47,12 @@ def get_valid_score():
     return score
 
 def calculate_result(score):
+    """
+    Calculate the result based on user score.
+
+    :param score: Int value
+    :return: String value
+    """
     if score >= 90:
         return "Excellent"
     elif score >= 50:
@@ -50,9 +61,20 @@ def calculate_result(score):
         return "Bad"
 
 def print_stars(score):
+    """
+    Print as many stars as user score
+
+    :param score: Int value
+    :return: None
+    """
     print("*" * score)
 
 def get_choice():
+    """
+    Get a choice from menu
+
+    :return: String value contain user choice
+    """
     print(MENU)
     return input(">>> ").upper()
 

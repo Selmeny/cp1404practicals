@@ -15,6 +15,12 @@ def main():
     print_result(False, random_score, random_grade)
 
 def calculate_grade(score):
+    """
+    Calculate the grade based on score given.
+
+    :param score: Int value to translate -> String result
+    :return: String value
+    """
     if score < 0 or score > 100:
         return "Invalid score"
     elif score >= 90:
@@ -25,6 +31,13 @@ def calculate_grade(score):
         return "Bad"
 
 def print_result(is_user: bool, score, grade):
+    """
+    Print the result based on user status, score, and grade.
+    :param is_user: Boolean to confirm if user or random
+    :param score: Int value
+    :param grade: String value
+    :return: None
+    """
     if is_user:
         print(f"User score {score:.2f} is {grade}")
 
