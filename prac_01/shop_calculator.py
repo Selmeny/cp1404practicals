@@ -3,9 +3,8 @@ CP1404/CP5632 - Practical
 Calculator for a small shop
 """
 
-price = 0
-
 number_of_items = int(input("Number of items: "))
+price = 0
 
 while number_of_items < 0:
     print("Invalid number of items")

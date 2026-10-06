@@ -5,16 +5,16 @@ If sales are under $1,000, the user gets a 10% bonus.
 If sales are $1,000 or over, the bonus is 15%.
 """
 
-sales_threshold = 1000
-tier_1_bonus = 0.1
-tier_2_bonus = 0.15
+SALES_THRESHOLD = 1000
+TIER_1_BONUS = 0.1
+TIER_2_BONUS = 0.15
 
 sales = float(input("Enter sales: $"))
 
-if sales < sales_threshold:
-    bonus = tier_1_bonus * sales
+if sales < SALES_THRESHOLD:
+    bonus = TIER_1_BONUS * sales
 else:
-    bonus = tier_2_bonus * sales
+    bonus = TIER_2_BONUS * sales
 
 print(f"This is your bonus ${bonus:2f}")
 
